@@ -1,14 +1,17 @@
-# Simple reverse Cipher
+import argparse
 
-message = input('Enter a message: ')
+def reverse_message(message):
+    return message[::-1]
 
-def reverseCipher(message):
-	translated = ''
-	i=len(message)-1
-	while i>=0:
-		translated+=message[i]
-		i-=1
-	print(translated)
+def main():
+    parser = argparse.ArgumentParser(description="Reverse Message")
+    parser.add_argument("message", type=str, help="Message to reverse")
 
+    args = parser.parse_args()
 
-reverseCipher(message)
+    reversed_message = reverse_message(args.message)
+    print("Reversed Message:")
+    print(reversed_message)
+
+if __name__ == "__main__":
+    main()
