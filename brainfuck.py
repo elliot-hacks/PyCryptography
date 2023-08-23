@@ -2,63 +2,22 @@ import argparse
 
 def brainfuck_encrypter(text):
     brainfuck_code = ""
+    memory = [0] * 30000
+    pointer = 0
+
     for char in text:
         code_point = ord(char)
-        brainfuck_code += "+" * code_point + "."
+        while memory[pointer] != code_point:
+            if memory[pointer] < code_point:
+                brainfuck_code += "+"
+                memory[pointer] += 1
+            else:
+                brainfuck_code += "-"
+                memory[pointer] -= 1
+        brainfuck_code += "."
+
     return brainfuck_code
 
-"""
-def brainfuck_decrypter(code):
-    memory = [0] * 30000  # Initialize memory cells
-    pointer = 0  # Pointer to the current memory cell
-    output = ""  # Stores the decrypted plaintext
-
-    loop_stack = []  # Stack to handle loops
-
-    i = 0
-    while i < len(code):
-        command = code[i]
-
-        if command == "+":
-            memory[pointer] += 1
-
-        elif command == "-":
-            memory[pointer] -= 1
-
-        elif command == ">":
-            pointer += 1
-
-        elif command == "<":
-            pointer -= 1
-
-        elif command == "[":
-            if memory[pointer] == 0:
-                # Skip to the matching ']'
-                loop_depth = 1
-                while loop_depth > 0:
-                    i += 1
-                    if code[i] == "[":
-                        loop_depth += 1
-                    elif code[i] == "]":
-                        loop_depth -= 1
-
-            else:
-                loop_stack.append(i)
-
-        elif command == "]":
-            if memory[pointer] == 0:
-                loop_stack.pop()
-            else:
-                i = loop_stack[-1] - 1
-
-        elif command == ".":
-            output += chr(memory[pointer])
-
-        i += 1
-
-    return output
-
-"""
 
 def brainfuck_decrypter(code):
     memory = [0] * 30000
