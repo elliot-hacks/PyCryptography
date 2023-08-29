@@ -1,5 +1,25 @@
 import argparse
 
+"""
+def brainfuck_encrypter(text):
+    memory = [0] * 30000
+    pointer = 0
+    brainfuck_code = ''
+
+    for char in text:
+        code_point = ord(char)
+        while memory[pointer] != code_point:
+            if memory[pointer] < code_point:
+                brainfuck_code += "+"
+                memory[pointer] += 1
+            else:
+                brainfuck_code += "-"
+                memory[pointer] -= 1
+        brainfuck_code += "."
+    
+    return brainfuck_code
+"""
+
 def brainfuck_encrypter(text):
     brainfuck_code = ""
     memory = [0] * 30000

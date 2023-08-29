@@ -15,6 +15,13 @@
     Decrypted Message:
     ELLIOT HACKS
 
+#### brute-force
+    >>>python caesar.py --brute --message "HOOLRW KDFNV"       
+    Brute-force decryption results:
+    Key 0: HOOLRW KDFNV
+    Key 1: GNNKQV JCEMU
+    Key 2: FMMJPU IBDLT
+    Key 3: ELLIOT HACKS
 
 3. ### Brainfuck: Brainfuck is a minimalist and esoteric programming language created by Urban Müller in 1993.
 ### usage :
@@ -31,9 +38,13 @@
     dneirf olleH
 
 
-5. ### Vigenère Cipher : A more advanced substitution cipher that uses a keyword to determine the shifting amount for each letter.
+5. ### Transposition cipher : Involves re nging the letters in the plaintext to form the ciphertext.
+### usage :
+    >>>python transposition.py -m "Elliot hacks.Am I right?" -k 3
+    Ei c. rhlohkAIitltasm g?|
 
-6. ### Transposition cipher : Involves re nging the letters in the plaintext to form the ciphertext.
+
+6. ### Vigenère Cipher : A more advanced substitution cipher that uses a keyword to determine the shifting amount for each letter.
 
 7. ### Substitution  cipherer : Involves re ing each letter in the plaintext with a corresponding letter or symbol in the ciphertext.
 
