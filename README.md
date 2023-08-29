@@ -38,7 +38,7 @@
     dneirf olleH
 
 
-5. ### Transposition cipher : Involves re nging the letters in the plaintext to form the ciphertext.
+5. ### Transposition cipher : Involves rearranging the letters in the plaintext to form the ciphertext.
 ### usage :
     >>>python transposition.py -m "Elliot hacks.Am I right?" -k 3
     Ei c. rhlohkAIitltasm g?|
