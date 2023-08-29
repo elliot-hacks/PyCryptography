@@ -46,15 +46,15 @@
 
 6. ### Vigenère Cipher : A more advanced substitution cipher that uses a keyword to determine the shifting amount for each letter.
 
-7. ### Substitution  cipherer : Involves re ing each letter in the plaintext with a corresponding letter or symbol in the ciphertext.
+7. ### Substitution  cipherer : Involves rearranging each letter in the plaintext with a corresponding letter or symbol in the ciphertext.
 
-8. ### RSA Encryption  : A public-ke yptosystem that involves generating a public and private key pair for secure communication.
+8. ### RSA Encryption  : A public-ke cryptosystem that involves generating a public and private key pair for secure communication.
 
 9. ### AES Encryption  : A symmetric  encryption algorithm used to secure sensitive data.
 
-10. ### Hill Cipher A polygraph ubstitution cipher that uses linear algebra for encryption and decryption.
+10. ### Hill Cipher A polygraph substitution cipher that uses linear algebra for encryption and decryption.
 
-11. ### Diffie-Hellma y Exchange : A method fo o parties to agree on a shared secret key over an unsecured communication channel.
+11. ### Diffie-Hellma y Exchange : A method for other parties to agree on a shared secret key over an unsecured communication channel.
 
 12. ### SHA-256 Hashing : A cryptogra  hash function that produces a fixed-size output (256 bits) from an input.
 
@@ -64,8 +64,8 @@
 
 15. ### Playfair Cipher : A digraphic stitution cipher using a 5x5 matrix of letters.
 
-16. ### Rail Fence Cipher: A transposi  cipher that rearranges the letters in a zigzag pattern.
+16. ### Rail Fence Cipher: A transposition  cipher that rearranges the letters in a zigzag pattern.
 
-17. ### Autokey Cipher : A substitut cipher that uses the plaintext itself to generate part of the key for encryption.
+17. ### Autokey Cipher : A substitution cipher that uses the plaintext itself to generate part of the key for encryption.
 
 18. ### Columnar Transposition Cipher : A transposition cipher where the columns are rearranged based on a keyword.
